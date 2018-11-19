@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    show-sql: true
+  datasource: 
+    driverClassName : com.mysql.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/yang_gbm?useUnicode=true&characterEncoding=UTF-8
+    username : root
+    password : root
+server:
+  servlet:
+    context-path: /api

@@ -1,0 +1,16 @@
+server:
+  port: 3000
+spring:
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  liquibase: 
+    change-log: classpath:/liquibase/master.xml
+    enabled: true
+  profiles:
+    active: dev
